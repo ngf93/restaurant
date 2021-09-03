@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Site</title>
-	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<!-- <link rel="stylesheet" href="css/common.css" /> -->
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/fonts.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
@@ -18,7 +18,10 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	<section id="sec-1">
 		<div class="container">
 			<header>
-				<nav>
+				<button type="button" class="d-block d-md-none fs-15">
+					<i class="fas fa-bars color-1"></i>
+				</button>
+				<nav class="d-none d-md-flex">
 					<ul>
 						<li><a href="">HOME</a></li>
 						<li><a href="">ABOUT</a></li>
@@ -56,15 +59,15 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 					</a>
 				</div>
 			</main>
-			<button class="btn-down mx-auto">
+			<a href="#sec-2" class="to-anchor btn-down mx-auto">
 				<img src="img/icons/arrow-down.svg" alt="">
-			</button>
+			</a>
 		</div>
 	</section>
 
 	<section id="sec-2">
 		<div class="container cont-1">
-			<div class="row row-cols-2 gx-5 align-items-center">
+			<div class="row row-cols-md-2 gx-4 gx-lg-5 align-items-center">
 				<div>
 					<h2>about us</h2>
 					<hr class="mini my-3">
@@ -83,7 +86,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	<section id="sec-3">
 		<div class="container cont-2">
 			<h3 class="mb-5">Our team</h3>
-			<div class="row flex-row-reverse row-cols-2 gx-5 align-items-center">
+			<div class="row flex-row-reverse row-cols-md-2 gx-4 gx-lg-5 align-items-center">
 				<div>
 					<h2>MASTER CHEF</h2>
 					<hr class="mini my-3">
@@ -101,12 +104,12 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 	<section id="sec-4">
 		<div class="container cont-3">
-			<div class="row row-cols-2 gx-5 align-items-center mb-5">
+			<div class="row row-cols-md-2 gx-4 gx-lg-5 align-items-center mb-5">
 				<div>
 					<h2>book a table</h2>
 					<hr class="mini mt-3 mb-4">
 					<form action="" class="fs-09">
-						<div class="row g-3">
+						<div class="row g-2 g-lg-3">
 							<div class="col-6">
 								<input type="text" placeholder="Name">
 							</div>
@@ -171,7 +174,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<div class="row flex-row-reverse row-cols-2 gx-5 align-items-center">
+						<div class="row flex-row-reverse row-cols-md-2 gx-4 gx-lg-5 align-items-center">
 							<div>
 								<h2>chocolate pancakes</h2>
 								<hr class="mini my-3">
@@ -186,7 +189,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div class="row flex-row-reverse row-cols-2 gx-5 align-items-center">
+						<div class="row flex-row-reverse row-cols-md-2 gx-4 gx-lg-5 align-items-center">
 							<div>
 								<h2>chocolate pancakes</h2>
 								<hr class="mini my-3">
@@ -201,7 +204,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div class="row flex-row-reverse row-cols-2 gx-5 align-items-center">
+						<div class="row flex-row-reverse row-cols-md-2 gx-4 gx-lg-5 align-items-center">
 							<div>
 								<h2>chocolate pancakes</h2>
 								<hr class="mini my-3">
@@ -217,7 +220,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 					</div>
 				</div>
 			</div>
-			
 		</div>
 	</section>
 
@@ -226,10 +228,10 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 			<h2>DELICIOUS MENU</h2>
 			<hr class="mini my-3">
 			<div class="row justify-content-center">
-				<div class="col-6">
-					<div class="fw-7 fs-11 text-center lh-17 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+				<div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6">
+					<div class="fw-7 fs-11 text-center lh-17 mb-4 mb-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
 				</div>
-				<div class="col-8">
+				<div class="col-lg-10 col-xl-9 col-xxl-8">
 					<nav class="mb-5">
 						<ul>
 							<li><a href="#">SOUPE</a></li>
@@ -242,7 +244,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 						</ul>
 					</nav>
 				</div>
-				
 			</div>
 			<div class="menu">
 				<div class="dish">
@@ -301,34 +302,204 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 					</div>
 					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
 				</div>
-			</div>
-			<!-- <div class="row gx-5">
-				<div class="col-4">
-					<div class="dish">
-						<div class="line-1">
-							<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
-							<div class="price">55,68 USD</div>
-						</div>
-						<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
 					</div>
-					<div class="dish">
-						<div class="line-1">
-							<div class="title"><span>Lorem ipsum dolor sit amet consectetur</span></div>
-							<div class="price">55,68 USD</div>
-						</div>
-						<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
-					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
 				</div>
-				<div class="col-4"></div>
-				<div class="col-4"></div>
-			</div> -->
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+				<div class="dish">
+					<div class="line-1">
+						<div class="title"><span>PIZZA QUATRO STAGIONI</span></div>
+						<div class="price">55,68 USD</div>
+					</div>
+					<div class="gray fs-08">Integer ullamcorper neque eu purus euismod</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
+	<section id="sec-7">
+		<div class="container cont-4">
+			<h3 class="mb-5">PRIVATE EVENTS</h3>
+			<div class="row row-cols-2 gx-5 align-items-center mb-5">
+				<div>
+					<div class="img-box img-box-right">
+						<img src="img/img5.png">
+						<div class="title">
+							<h4>weddings</h4>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="img-box img-box-left">
+						<img src="img/img6.png">
+						<div class="title">
+							<h4>corporate pzrties</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center white-tr fs-08">For private events please call: <a href="#" class="fw-7">+40 729 131 637</a>/<a href="#" class="fw-7">+40 726 458 782</a> or use the contact form.</div>
+		</div>
+	</section>
 
+	<section id="sec-8">
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/restaurant/1.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/restaurant/2.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/restaurant/3.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/restaurant/4.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="sec-9">
+		<div class="container cont-1">
+			<h2>CONTACT</h2>
+			<hr class="mini my-3">
+			<div class="row justify-content-center">
+				<div class="col-md-9 col-lg-8 col-xl-7 col-xl-6">
+					<div class="fw-7 fs-11 text-center lh-17 mb-4 mb-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+				</div>
+			</div>
+			<form action="">
+				<div class="row align-items-center g-2 g-lg-3">
+					<div class="col-4">
+						<input type="text" placeholder="Name" class="fs-09">
+					</div>
+					<div class="col-4">
+						<input type="text" placeholder="Email" class="fs-09">
+					</div>
+					<div class="col-4">
+						<input type="text" placeholder="Phone" class="fs-09">
+					</div>
+					<div class="col-12">
+						<textarea name="" rows="6" placeholder="Message" class="fs-09"></textarea>
+					</div>
+					<div class="col-6 d-flex flex-wrap justify-content-around fs-08">
+						<div class="my-1">
+							<i class="fas fa-map-marker-alt color-1"></i>
+							<span class="gray fw-7">5th London Boulevard, U.K.</span>
+						</div>
+						<div class="my-1">
+							<i class="fas fa-phone color-1"></i>
+							<span class="gray fw-7"><a href="#">+40 729 131 637</a>/<a href="#">+40 726 458 782</a></span>
+						</div>
+						<div class="my-1">
+							<i class="fas fa-envelope color-1"></i>
+							<a class="gray fw-7" href="mailto:office@mindblister.com">office@mindblister.com</a>
+						</div>
+					</div>
+					<div class="col-6">
+						<button class="btn btn-1 fs-08 w-100">SEND MESSAGE</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section id="sec-10">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa86e05ebe9c5115f10fedb15ad17c648a6ae3a353ae7e10360fa014bfc6ecb64&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=false"></script>
+	</section>
+
+	<footer>
+		<div class="container p-4 p-lg-5 text-center">
+			<div class="white-tr fs-08">© Copyright <span class="fw-7">Mindblister</span> <span id="year"></span></div>
+		</div>
+	</footer>
 
 	<!-- Skripts -->
 	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	
 </body>
 </html>
